@@ -577,8 +577,7 @@ public:
            getline(in, hd2);
             cout << hd2 << "\n";
        }
-        in.close();
-       
+        in.close(); 
     }
 };
 int main()

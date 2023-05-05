@@ -287,7 +287,6 @@ public:
        pstmt = con->prepareStatement("DELETE FROM inventory WHERE army_id = ?");
        pstmt->setInt(1,x);
        result = pstmt->executeQuery();
-       printf("Row deleted\n");
 
        con->setSchema("armydata");
 
@@ -383,7 +382,7 @@ public:
         else {
             cout << "id passward matched \n" << endl;
             int ni;
-            cout << "\n press 0 to complete your profile if not completed\n 1- to show your profile\n 2- if you want to delete your id from the database\n 3- to modify your information " << endl;
+            cout << "\n press\n 0- to complete your profile if not completed\n 1- to show your profile\n 2- if you want to delete your id from the database\n 3- to modify your information " << endl;
             fflush(stdin);
             cin >> ni;
             fflush(stdin);
@@ -557,15 +556,21 @@ public:
     }
     void help()
     {
+       
+
         string hd;
         string hd2;
         cout << "----------- WELCOME TO AGNIVEER'S HELPDESK --------------" << endl;
         cout << "\n please enter your querry, we will be soon in contact with you." << endl<<endl;
         ios_base::sync_with_stdio(false);
         cin.tie(NULL);
-        cin >> hd;
+        ofstream out("helpdaat.txt");
+        getline(cin, hd);
+        getline(cin, hd);
+        out << hd;
         fflush(stdin);
         cout << "\n\n";
+        out.close();
         ifstream in("helpdesk1.txt");
        while (in.eof() == 0) {
            fflush(stdin);
@@ -591,6 +596,7 @@ tryx:
     fflush(stdin);
     cin >> q;
     fflush(stdin);
+    system("CLS");
     if (n != q)
     {
         // including captcha, so that you will be protected from spam and password decryption
@@ -626,6 +632,7 @@ tryx:
     fflush(stdin);
     cin >> e;
     fflush(stdin);
+    system("CLS");
     switch (e)
     {
     case 1:
@@ -635,6 +642,7 @@ tryx:
         cout << "press 1 to go to the main window or 0 to exit" << endl;
         fflush(stdin);
         cin >> x0;
+        system("CLS");
         if (x0 == 1) {
             goto no;
         }
@@ -648,6 +656,7 @@ tryx:
         cout << "press 1 to go to the main window or 0 to exit" << endl;
         fflush(stdin);
         cin >> x1;
+        system("CLS");
         if (x1 == 1) {
             goto no;
         }
@@ -661,6 +670,7 @@ tryx:
         cout << "press 1 to go to the main window or 0 to exit" << endl;
         fflush(stdin);
         cin >> x2;
+        system("CLS");
         if (x2 == 1) {
             goto no;
         }
@@ -674,6 +684,7 @@ tryx:
         cout << "press 1 to go to the main window or 0 to exit" << endl;
         fflush(stdin);
         cin >> x3;
+        system("CLS");
         if (x3 == 1) {
             goto no;
         }
@@ -687,6 +698,7 @@ tryx:
         cout << "press 1 to go to the main window or 0 to exit" << endl;
         fflush(stdin);
         cin >> x4;
+        system("CLS");
         if (x4 == 1) {
             goto no;
         }
@@ -700,6 +712,7 @@ tryx:
         cout << "press 1 to go to the main window or 0 to exit" << endl;
         fflush(stdin);
         cin >> x5;
+        system("CLS");
         if (x5 == 1) {
             goto no;
         }
@@ -713,6 +726,7 @@ tryx:
         cout << "press 1 to go to the main window or 0 to exit" << endl;
         fflush(stdin);
         cin >> x6;
+        system("CLS");
         fflush(stdin);
         if (x6 == 1) {
             goto no;

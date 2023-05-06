@@ -622,9 +622,9 @@ tryx:
     cout << "2- AGNIVEER LOGIN WINDOW" << endl;
     cout << "3- NOTICES FOR AGNIVEERS" << endl;
     cout << "4- RULES AND REGULATIONS" << endl;
-    cout << "5- JOB VACANCES AND AGNIVEER QUOTA(*)" << endl;
-    cout << "6- PRIVILAGES AFTER SERVICE(*)" << endl;
-    cout << "7- HELP OR QUARRIES" << endl
+    cout << "5- JOB VACANCIES AND AGNIVEER QUOTA(*)" << endl;
+    cout << "6- PRIVILIGES AFTER SERVICE(*)" << endl;
+    cout << "7- HELP OR QUERIES" << endl
         << endl;
     cout << "* -> only for the agniveers who had completed their 4 year service" << endl
         << endl;
